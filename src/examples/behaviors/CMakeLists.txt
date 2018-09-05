@@ -68,6 +68,12 @@ if(ARGOS_BUILD_FOR_SIMULATOR)
   target_link_libraries(sync argos3plugin_simulator_kilolib)
 
   #
+  # Test - Pairing
+  #
+  add_executable(pairing pairing.c)
+  target_link_libraries(pairing argos3plugin_simulator_kilolib)
+
+  #
   # Debugging example
   #
   add_executable(test_debug test_debug.h test_debug.c)

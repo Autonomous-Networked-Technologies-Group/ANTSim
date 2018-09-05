@@ -1,0 +1,5 @@
+add_library(kilobot_pairing SHARED kilobot_pairing.h kilobot_pairing.cpp)
+target_link_libraries(kilobot_pairing
+  argos3core_simulator
+  argos3plugin_simulator_kilobot
+  argos3plugin_simulator_genericrobot)
