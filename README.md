@@ -11,6 +11,11 @@ make
 sudo make install
 ```
 
+## Super Special Awesome ANTs Project
+```shell
+argos3 -c src/examples/experiments/kilobot_pairing.argos
+```
+
 ## Lab 0
 ```shell
 argos3 -c src/examples/experiments/kilobot_blinky.argos
