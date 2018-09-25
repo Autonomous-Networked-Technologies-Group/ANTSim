@@ -309,7 +309,6 @@ if (sim_call_type==sim.syscb_actuation) then
             if (message_rx[6]==1) then
                 new_message = 1
                 message_rx[6] = 0
-                msg = message_rx[1]
                 result,distance,detectedPoint,detectedObjectHandle,detectedSurfaceNormalVector=sim.readProximitySensor(sensorHandle)
                 if (msg == pairedID) then
                     ---distance = estimate_distance(distance_measurement)
@@ -320,6 +319,7 @@ if (sim_call_type==sim.syscb_actuation) then
                 else
                     ---msg = message->data[0]
                     ---msg_state = message->data[1]
+                    msg = message_rx[1]
                     msg_state = message_rx[2]
                     --distance = estimate_distance(distance_measurement)
                 end
